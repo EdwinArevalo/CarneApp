@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/fondo"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/app_tittle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_corporation"
+        android:layout_marginTop="40dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textAlignment="center"
+        />
+    <ImageView
+        android:id="@+id/app_photo"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/app_tittle"
+        android:src="@drawable/face"
+        />
+
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="EDWIN AREVALO"
+        android:layout_below="@+id/app_photo"
+        android:layout_marginTop="15dp"
+        android:textSize="30sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        />
+    <TextView
+        android:id="@+id/app_skill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_rol"
+        android:layout_below="@+id/app_name"
+        android:layout_marginTop="5dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textAlignment="center"
+        />
+    <ImageView
+        android:id="@+id/app_code"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/app_skill"/>
+
+</RelativeLayout>
